@@ -91,9 +91,11 @@ $(document).ready(function(){
 // --------- Custom JS Ends --------- //
 
 $(document).ready(function(){
-  $('.sidebar-contact').toggleClass('active');
-  $('.toggle').click(function(){
     $('.sidebar-contact').toggleClass('active');
-    $('.toggle').toggleClass('active');
-  });
+
+    $('.toggle').click(function(){
+        $('.sidebar-contact').toggleClass('active');
+        $('.toggle').toggleClass('active');
+    });
+
 });
