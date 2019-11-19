@@ -502,6 +502,20 @@ section.basic_plan_details {
     padding-bottom: 15px;
 }
 
+h3.text-center.heading.headertext,
+h4.text-center.heading.headertext,
+ul.list-unstyled.mt-3.mb-4.headertext {
+    color: black;
+}
+
+h4.text-center.heading.headertext {
+    font-weight: bold;
+}
+
+hr.my-4.horizontalbar {
+    border-top: 2px solid black;
+}
+
 span.tick_mark_basic {
     color: black;
 }
