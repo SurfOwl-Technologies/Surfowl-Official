@@ -332,6 +332,15 @@ section.whatWeProvide {
     justify-content: center;
 }
 
+p.card-text {
+    margin-top: 14px;
+}
+
+a.btn.btn-dark.wd,
+a.btn.btn-dark.logoinfo {
+    margin-top: 42px;
+}
+
 a.btn.btn-dark {
     border-radius: 20px;
     padding-left: 25px;
