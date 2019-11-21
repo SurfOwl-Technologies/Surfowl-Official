@@ -1,0 +1,193 @@
+
+/** ---------- Media Queries ---------- **/
+
+/** For larger screens --> Full HD (Laptops/Desktops) **/
+@media only screen and (min-width: 1367px) {
+    br.contactdetailsbreak {
+        display: none;
+    }
+}
+
+/** For HD Screens --> (Laptops/Desktops) **/
+@media only screen and (min-width: 992px) and (max-width: 1366px) {
+
+    body {
+        font-size: 12px;
+    }
+    
+    br.contactdetailsbreak {
+        display: none;
+    }
+    
+    .card-header.border-success.lead.group-divs {
+        padding-top: 25px;
+        height: 85px;
+    }
+    
+    br.contactdetailsbreak {
+        display: none;
+    }
+    
+    .sidebar-contact.active,
+    .sidebar-contact {
+        top: 65%;
+    }
+}
+
+/** For Tablets and Medium Devices (Ipad Pro / Ipad etc.) **/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    br.contactdetailsbreak {
+        display: none;
+    }    
+    .col-lg-6.text-center.why-us-desc,
+    img#logo_infographics {
+        padding-top: 25px;
+    }
+    
+    .col-md-12.col-lg-6.web-sol-desc,
+    .col-md-12.col-lg-6.digital-mark-desc {
+        padding-top: 30px;
+    }
+    
+    img#web_development {
+        height: 375px;
+    }
+    
+    .card-header.border-success.lead.group-divs.dm {
+        padding-top: 25px;
+        height: 85px;
+    }
+    
+    .sidebar-contact.active {
+        top: 55%;
+        width: 275px;
+    }
+    
+    .sidebar-contact {
+        top: 60%;
+    }
+    
+    p.descriptionTextws {
+        text-align: justify;
+    }
+
+}
+
+/** For Mobile Devices (Iphone SE) **/
+@media only screen and (max-height: 412px) { 
+        
+    .sidebar-contact.active,
+    .sidebar-contact {
+        display: none;
+    }
+
+}
+
+
+/** For Mobile Devices (IPhone X/XR/8/7, Nexus 5 plus) **/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+    .col-lg-6.text-center.why-us-desc {
+        padding-top: 25px;
+    }
+    
+    button.btn.btn-link.faqquestion.collapsed,
+    button.btn.btn-link.faqquestion,
+    button.btn.btn-link.collapsed, button.btn.btn-link {
+        text-align: start;
+    }
+    
+    h5.headingHeader, h5.headingtext {
+        font-size: 15px;
+    }
+    
+    .col-md-12.col-lg-6.web-sol-desc,
+    .col-md-12.col-lg-6.digital-mark-desc {
+        padding-top: 30px;
+    }
+    
+    img#web_development {
+        height: 225px;
+    }
+    
+    img#logo_infographics {
+        height: 300px;
+    }
+    
+    img#dm-img {
+        height: 375px;
+    }
+    
+    .sidebar-contact.active,
+    .sidebar-contact {
+        display: none;
+    }
+}
+
+/** For Mobile Devices (Galaxy Phones/Android Phones) **/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .sidebar-contact.active,
+    .sidebar-contact {
+        display: none;
+    }
+    
+    h5.headingtext {
+        font-size: medium;
+        padding-left: 10px;
+    }
+    
+    div#headerContent {
+        font-size: smaller;
+        padding-left: 19px;
+    }
+    
+    .col-lg-6.text-center.why-us-desc {
+        padding-top: 15px;
+    }
+    
+    button.btn.btn-link.collapsed,
+    button.btn.btn-link {
+        text-align: start;
+    }
+    
+    img#web_development {
+        height: 250px;
+    }
+    
+    p.descriptionText {
+        padding-top: 0px;
+        text-align: justify;
+    }
+    p.descriptionTextws,
+    p.descriptionTextdm {
+        padding-top: 30px;
+        text-align: justify;
+    }
+    
+    p.descriptionText.para {
+        padding-top: 0px;
+        text-align: start;
+    }
+    
+    a.btn.btn-dark {
+        padding-left: 22px;
+    }
+    
+    img#logo_infographics {
+        height: 300px;
+    }
+    
+    img#dm-img {
+        height: 350px;
+    }
+    
+    span.button-text {
+        padding-left: 0px;
+    }
+    
+    h5.contact-header {
+        font-size: medium;
+    }
+}
