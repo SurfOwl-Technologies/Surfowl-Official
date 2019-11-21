@@ -461,6 +461,17 @@ p.descriptionTextws {
     text-align: start;
 }
 
+p.descriptionTextLogoInfo,
+p.descriptionTextLogoInfo.para {
+    padding-left: 50px;
+    text-align: start;
+}
+
+ul.lead.features.logoInfo,
+ul.features-desc.logoInfo {
+    margin-left: 50px;
+}
+
 span.button-text {
     padding-left: 25px;
 }
@@ -665,6 +676,10 @@ i.fab.fa-instagram.fa-lg.white-text.mr-md-5.mr-3.fa-2x {
 
 /** For HD Screens --> (Laptops/Desktops) **/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
+
+    body {
+        font-size: 12px;
+    }
     
     br.contactdetailsbreak {
         display: none;
