@@ -8,7 +8,7 @@
     }
 }
 
-/** For HD Screens --> (Laptops/Desktops) **/
+/** For HD Screens --> (Laptops/Desktops HD) **/
 @media only screen and (min-width: 992px) and (max-width: 1366px) {
 
     body {
@@ -111,7 +111,7 @@
 }
 
 /** For Tablets and Medium Devices (Ipad Pro / Ipad etc.) **/
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     h4.whyChooseUsText {
         margin-top: -30px;
@@ -123,7 +123,7 @@
         height: 50px;
     }
 
-    p.descriptionTextws, p.descriptionTextdm {
+    p.descriptionTextdm , p.descriptionTextws{
         margin-top: -40px;
     }
     
@@ -180,6 +180,10 @@
 
 /** For Mobile Devices (IPhone X/XR/8/7, Nexus 5 plus) **/
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    p.descriptionTextdm , p.descriptionTextws{
+        margin-top: -11px;
+    }
 
     a.btn.btn-dark.headingHeader {
         font-size: 0.85rem;
