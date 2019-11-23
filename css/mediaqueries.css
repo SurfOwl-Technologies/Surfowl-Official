@@ -36,7 +36,11 @@
     }
 
     .control-group.form-group {
-        width: 7cm;
+        width: 6cm;
+    }
+
+    textarea#message {
+        width: 13cm;
     }
 
     p.lead, ul.features-desc.lead, h6.contactFormDetails, h3.text-center.heading {
@@ -107,7 +111,21 @@
 }
 
 /** For Tablets and Medium Devices (Ipad Pro / Ipad etc.) **/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+    h4.whyChooseUsText {
+        margin-top: -30px;
+    }
+
+    .card-header.border-success.lead.group-divs.dm,
+    .card-header.border-success.lead.group-divs.logoinfo {
+        padding-top: 14px;
+        height: 50px;
+    }
+
+    p.descriptionTextws, p.descriptionTextdm {
+        margin-top: -40px;
+    }
     
     br.contactdetailsbreak {
         display: none;
@@ -126,18 +144,21 @@
         height: 375px;
     }
     
-    .card-header.border-success.lead.group-divs.dm {
-        padding-top: 25px;
-        height: 85px;
-    }
-    
     .sidebar-contact.active {
-        top: 55%;
+        top: 38%;
         width: 275px;
     }
     
+    .control-group.form-group {
+        width: 5cm;
+    }
+
+    textarea#message {
+        width: 10.5cm;
+    }
+
     .sidebar-contact {
-        top: 60%;
+        top: 41%;
     }
     
     p.descriptionTextws {
@@ -158,8 +179,59 @@
 
 
 /** For Mobile Devices (IPhone X/XR/8/7, Nexus 5 plus) **/
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    a.btn.btn-dark.headingHeader {
+        font-size: 0.85rem;
+        line-height: 1.25;
+    }
     
+    h4.whyChooseUsText {
+        margin-top: 0px;
+    }
+
+    h3.text-center.heading {
+        font-size: 1.25rem;
+    }
+
+    .card-header.border-success.lead {
+        font-size: 16px;
+    }
+
+    .card-header.border-success.lead.group-divs.dm {
+        padding-top: 25px;
+    }
+
+    a.btn.btn-dark.wd {
+        margin-top: 64px;
+    }
+
+    .card-header.plan-details-header.dm {
+        height: 67px;
+        padding-top: 23px;
+    }
+
+    textarea#message {
+        width: 17cm;
+    }
+
+    .control-group.form-group {
+        width: 8cm;
+    }
+
+    .col-lg-6.nextFeatureDesc {
+        margin-top: -40px;
+    }
+
+    a.btn.btn-dark.logoinfo {
+        margin-top: 84px;
+    }
+
+    .card-header.border-success.lead.group-divs.dm,
+    .card-header.border-success.lead.group-divs.logoinfo {
+        height: 74px;
+    }
+
     .col-lg-6.text-center.why-us-desc {
         padding-top: 25px;
     }
