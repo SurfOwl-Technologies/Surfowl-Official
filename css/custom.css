@@ -203,11 +203,6 @@ span.gap {
     padding-left: 25px;
 }
 
-.logo {
-    height: 45px;
-    width: 225px;
-}
-
 a.nav-link {
     margin-right: 10px;
 }
@@ -636,6 +631,17 @@ p.help-block > ul > li {
 
 h3.contact-details-headers {
     font-weight: bold;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    position: absolute;
 }
 
 /** --------- Contact Us Page Ends --------- **/
