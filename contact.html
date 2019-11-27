@@ -77,22 +77,23 @@
                 <h3 class="text-center heading">Surfowl - Low Cost Website Design and Digital Marketing Company, Kolkata</h3>
                 <hr class="my-4">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        
-                        <p class="lead">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="lead contactUsContent">
                             Surfowl is a premier web design and digital marketing company started to primarilly focus on delivering scalable, effient, user-interactive, responsive and optimized websites for all devices as per the latest trends. Our primary goal is to create or enhance your brand by creating logo and infographics to making websites and promote the same to maintain the client requirement at the fullest.
                         </p>
-                        <br>
+                    </div>
+                    <br>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="card-header contact-card-header text-center"><h5 class="contact-header">Have a Query? Contact Us!</h5></div>
                             <div class="card-body contact-card-body">
-                                <form role="form" method="post" action="contact_me.php" id="contactForm" novalidate>
+                                <form role="form" method="post" action="contact_me.php" id="contactForm" name="contactForm" novalidate>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label class="field_name">First Name: <span class="imp_field">*</span></label>
-                                                    <input type="text" class="form-control" id="fName" placeholder="Enter First Name" required data-validation-required-message="Please Enter the First Name"/>
+                                                    <input type="text" class="form-control" id="fName" name="fName" placeholder="Enter First Name" required data-validation-required-message="Please Enter the First Name"/>
                                                     <p class="help-block"></p>
                                                 </div>
                                             </div>
@@ -101,7 +102,7 @@
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label class="field_name">Last Name: <span class="imp_field">*</span></label>
-                                                    <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" required data-validation-required-message="Please Enter the Last Name"/>
+                                                    <input type="text" class="form-control" id="lName" name="lName" placeholder="Enter Last Name" required data-validation-required-message="Please Enter the Last Name"/>
                                                     <p class="help-block"></p>
                                                 </div>
                                             </div>
@@ -112,7 +113,7 @@
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label class="field_name">Contact No.: <span class="imp_field">*</span></label>
-                                                    <input type="tel" class="form-control" id="contact_no" placeholder="Enter Contact No" maxlength="10" minlength="10" required data-validation-required-message="Please Enter the valid 10 digit Contact Number" pattern="[6789][0-9]{9}"/>
+                                                    <input type="tel" class="form-control" id="contact_no" name="contact_no" placeholder="Enter Contact No" maxlength="10" minlength="10" required data-validation-required-message="Please Enter the valid 10 digit Contact Number" pattern="[6789][0-9]{9}"/>
                                                     <p class="help-block"></p>
                                                 </div>
                                             </div>
@@ -121,7 +122,7 @@
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label class="field_name">E-Mail ID: <span class="imp_field">*</span></label>
-                                                    <input type="email" class="form-control" id="emailId" placeholder="Enter E-Mail ID" required data-validation-required-message="Please Enter a valid E-Mail ID"/>
+                                                    <input type="email" class="form-control" id="emailId" name="emailId" placeholder="Enter E-Mail ID" required data-validation-required-message="Please Enter a valid E-Mail ID"/>
                                                     <p class="help-block"></p>
                                                 </div>
                                             </div>
@@ -133,15 +134,15 @@
                                                 <label class="field_name">Choose Your Plan: </label>
                                                 <br>
                                                 <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="999 Plan">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="999 Plan" name="plans[]">
                                                     <label class="form-check-label" for="inlineCheckbox1">999 Plan</label>
                                                   </div>
                                                   <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Basic Plan">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Basic Plan" name="plans[]">
                                                     <label class="form-check-label" for="inlineCheckbox2">Basic Plan</label>
                                                   </div>
                                                   <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Digital Marketing Plan">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Digital Marketing Plan" name="plans[]">
                                                     <label class="form-check-label" for="inlineCheckbox3">Digital Marketing Plan</label>
                                                   </div>
                                             </div>
@@ -154,15 +155,15 @@
                                                 <label class="field_name">Choose Services: </label>
                                                 <br>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Web Design and Development">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Web Design and Development" name="services[]">
                                                     <label class="form-check-label" for="inlineCheckbox1">Web Design and Development</label>
                                                   </div>
                                                   <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Logo and Infographics">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Logo and Infographics" name="services[]">
                                                     <label class="form-check-label" for="inlineCheckbox2">Logo and Infographics</label>
                                                   </div>
                                                   <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Digital Marketing">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Digital Marketing" name="services[]">
                                                     <label class="form-check-label" for="inlineCheckbox3">Digital Marketing</label>
                                                   </div>
                                             </div>
@@ -174,7 +175,7 @@
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label class="field_name">Leave a Message: <span class="imp_field">*</span></label>
-                                                    <textarea rows="5" cols="100" class="form-control" id="message" required placeholder="Leave a Message" data-validation-required-message="Entered text should be more than 150 characters" maxlength="300"></textarea>
+                                                    <textarea rows="5" cols="100" class="form-control" id="message" name="message" required placeholder="Leave a Message" data-validation-required-message="Entered text should be more than 150 characters" maxlength="300"></textarea>
                                                     <div id="count"></div>
                                                     <p class="help-block"></p>
                                                 </div>
@@ -187,15 +188,12 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mapclass">
                         <div class="map-responsive">
                             <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7366.707815764526!2d88.34906151082498!3d22.60325568144246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x64db62fd5e2aa0bd!2sSalkia%20Power%20House!5e0!3m2!1sen!2sin!4v1573398094215!5m2!1sen!2sin" width="540" height="470" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
                         <br>
-                        <br>
-                        <br>
-                        <br>                        
+                        <br>                       
                         <h6 class="contactFormDetails"><i class="fas fa-clock mr-3"></i><b>Business Hours: </b></h6>
                         <ul class="features-desc lead">
                             <li><i class="fas fa-calendar-alt mr-3"></i><span class="opening_hours">Monday:</span> 10 AM - 6 PM IST</li>
@@ -229,9 +227,8 @@
                     <div class="col-md-12 py-2 text-center">
                         <div>
                             <a href=""><i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 ml-3 fa-2x"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+                            <a href=""><i class="fab fa-quora fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
                             <a href=""><i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
-                            <a href=""><i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
