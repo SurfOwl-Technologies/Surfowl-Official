@@ -1,5 +1,16 @@
 <?php
-    $fname = $_POST['fName'];
+
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "test@surfowl.com";
+    $to = "sarkar.subhajit22@gmail.com";
+    $subject = "Checking PHP mail";
+    $message = "PHP mail works just fine";
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers);
+    echo "The email message was sent.";
+
+    /* $fname = $_POST['fName'];
     $lname = $_POST['lName'];
     $email = $_POST['emailId'];
     $phone = $_POST['contact_no'];
@@ -60,5 +71,5 @@
     $headers = "From: noreply@surfowl.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
     $headers .= "Reply-To: $email_address";   
     mail($to,$email_subject,$email_body,$headers);
-    return true;         
+    return true; */         
 ?>
