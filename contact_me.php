@@ -2,15 +2,8 @@
 
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $from = "test@surfowl.com";
-    $to = "sarkar.subhajit22@gmail.com";
-    $subject = "Checking PHP mail";
-    $message = "PHP mail works just fine";
-    $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
-    echo "The email message was sent.";
 
-    /* $fname = $_POST['fName'];
+    $fname = $_POST['fName'];
     $lname = $_POST['lName'];
     $email = $_POST['emailId'];
     $phone = $_POST['contact_no'];
@@ -62,14 +55,15 @@
         }
     }
 
-    $name = $fname + $lname;
+    $name = $fname . $lname;
 
     // Create the email and send the message
-    $to = 'care.surfowl@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-    $email_subject = "Website Contact Form:  $name";
-    $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nE-Mail ID: $email_address\n\nPhone: $phone\n\nMessage:\n$message\n\nPlans: \n$planDetail\n\nServices: \n$serviceDetail";
+    $from = &$email;
+    $to = "care.surfowl@gmail.com"; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.    
+    $subject = "Website Contact Form:  $name";
+    $body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nE-Mail ID: $email\n\nPhone: $phone\n\nMessage:\n$message\n\nPlans: \n$planDetail\n\nServices: \n$serviceDetail";
     $headers = "From: noreply@surfowl.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-    $headers .= "Reply-To: $email_address";   
-    mail($to,$email_subject,$email_body,$headers);
-    return true; */         
+    $headers .= "Reply-To: $email_address" . $from;   
+    mail($to,$subject,$body,$headers);
+    return true;        
 ?>
